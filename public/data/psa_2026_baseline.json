@@ -1,0 +1,40 @@
+{
+  "Metadata": {
+    "Source": "Philippine Statistics Authority (PSA) & IMF WEO",
+    "Date_Scraped": "April 2026",
+    "Description": "High-frequency overrides for simulation baseline."
+  },
+  "Baseline_Indicators": {
+    "GDP_Trillions_PHP": 26.2,
+    "Inflation_Rate": 0.041,
+    "Unemployment_Rate": 0.058,
+    "Poverty_Rate": 0.155
+  },
+  "ABM_Households": {
+    "Low_Income": {
+      "pop_share": 0.155,
+      "income_share": 0.05,
+      "mpc": 0.98,
+      "survival_cost_trill": 1.2
+    },
+    "Mid_Income": {
+      "pop_share": 0.7,
+      "income_share": 0.45,
+      "mpc": 0.85,
+      "survival_cost_trill": 5.0
+    },
+    "High_Income": {
+      "pop_share": 0.145,
+      "income_share": 0.5,
+      "mpc": 0.6,
+      "survival_cost_trill": 8.0
+    }
+  },
+  "Fiscal_Policy": {
+    "VAT_Rate": 0.12,
+    "CIT_Rate": 0.25,
+    "Gov_Base_Spending_Trill": 5.5,
+    "Net_Exports_Trill": -2.4
+  }
+}
+

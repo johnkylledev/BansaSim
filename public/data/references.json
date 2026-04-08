@@ -1,0 +1,183 @@
+{
+  "citations": [
+    {
+      "id": "psa-inflation-2026-051",
+      "label": 1,
+      "title": "Summary Inflation Report Consumer Price Index (2018=100): March 2026. Reference Number: 2026-051",
+      "publisher": "Philippine Statistics Authority",
+      "url": "https://psa.gov.ph",
+      "accessed": "April 2026",
+      "note": "Used for the 4.1% inflation rate baseline."
+    },
+    {
+      "id": "psa-employment-2026-032",
+      "label": 2,
+      "title": "Employment Rate in January 2026 was Estimated at 94.2 Percent. Reference Number: 2026-032",
+      "publisher": "Philippine Statistics Authority",
+      "url": "https://psa.gov.ph",
+      "accessed": "April 2026",
+      "note": "Used for the 5.8% unemployment rate baseline."
+    },
+    {
+      "id": "psa-gdp-2026-008",
+      "label": 3,
+      "title": "Philippine GDP Posts 3.0 Percent Growth in the Fourth Quarter of 2025, Bringing the Full-Year 2025 Growth to 4.4 Percent. Reference Number: 2026-008",
+      "publisher": "Philippine Statistics Authority",
+      "url": "https://psa.gov.ph",
+      "accessed": "April 2026",
+      "note": "Used for 4.4% GDP growth context and ₱26.2T nominal GDP baseline anchor."
+    },
+    {
+      "id": "psa-poverty-2024-111",
+      "label": 4,
+      "title": "Proportion of Poor Filipinos was Registered at 15.5 Percent in 2023. Reference Number: 2024-111",
+      "publisher": "Philippine Statistics Authority",
+      "url": "https://psa.gov.ph",
+      "accessed": "April 2026",
+      "note": "Used for 15.5% poverty incidence baseline and low-income cohort share."
+    },
+    {
+      "id": "psa-poverty-threshold",
+      "label": 5,
+      "title": "Family Income and Expenditure Survey poverty threshold benchmark",
+      "publisher": "Philippine Statistics Authority",
+      "url": "https://psa.gov.ph/statistics/income-expenditure/fies",
+      "accessed": "April 2026",
+      "note": "Used for ₱13,797 monthly poverty threshold for a family of five as survival-cost proxy."
+    },
+    {
+      "id": "wb-gini-2023",
+      "label": 6,
+      "title": "Gini Index - Philippines",
+      "publisher": "World Bank, World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=PH",
+      "accessed": "April 2026",
+      "note": "Used for 39.3 Gini coefficient to shape income-share assumptions."
+    },
+    {
+      "id": "train-act-10963",
+      "label": 7,
+      "title": "Republic Act No. 10963 (TRAIN Act)",
+      "publisher": "Official Gazette of the Republic of the Philippines",
+      "url": "https://www.officialgazette.gov.ph/2017/12/19/republic-act-no-10963/",
+      "accessed": "April 2026",
+      "note": "Used for PIT bracket framing in the simulator policy controls."
+    },
+    {
+      "id": "create-act-11534",
+      "label": 8,
+      "title": "Republic Act No. 11534 (CREATE Act)",
+      "publisher": "Official Gazette of the Republic of the Philippines",
+      "url": "https://www.officialgazette.gov.ph/2021/03/26/republic-act-no-11534/",
+      "accessed": "April 2026",
+      "note": "Used for 25% standard CIT baseline."
+    },
+    {
+      "id": "nirc-vat-12",
+      "label": 9,
+      "title": "National Internal Revenue Code (NIRC) of 1997, as amended",
+      "publisher": "Bureau of Internal Revenue / Official Gazette",
+      "url": "https://www.bir.gov.ph/index.php/tax-code.html",
+      "accessed": "April 2026",
+      "note": "Used for the 12% VAT baseline."
+    },
+    {
+      "id": "imf-datamapper-api",
+      "label": 10,
+      "title": "IMF World Economic Outlook Datamapper API (PHL)",
+      "publisher": "International Monetary Fund",
+      "url": "https://www.imf.org/external/datamapper/api/v1/PHL/",
+      "accessed": "April 2026",
+      "note": "Used for Real GDP growth and end-of-year inflation trend extraction into local CSV."
+    },
+    {
+      "id": "world-bank-wdi-api",
+      "label": 11,
+      "title": "World Development Indicators API (country PH, indicator endpoints)",
+      "publisher": "World Bank Group",
+      "url": "https://api.worldbank.org/v2/country/PH/indicator/",
+      "accessed": "April 2026",
+      "note": "Used with indicator codes NY.GDP.MKTP.CD, FP.CPI.TOTL.ZG, and SL.UEM.TOTL.ZS to build historical validation CSV."
+    },
+    {
+      "id": "open-er-api",
+      "label": 12,
+      "title": "Open Exchange Rates-compatible endpoint for latest USD/PHP",
+      "publisher": "Open Exchange Rates / ER-API",
+      "url": "https://open.er-api.com/v6/latest/USD",
+      "accessed": "April 2026",
+      "note": "Used for USD/PHP anchor of import purchasing-power context."
+    },
+    {
+      "id": "local-baseline-json",
+      "label": 13,
+      "title": "Simulator baseline dataset in this repository",
+      "publisher": "Local project data",
+      "url": "/data/psa_2026_baseline.json",
+      "accessed": "April 2026",
+      "note": "Primary Year-0 model state loaded directly by the app."
+    }
+  ],
+  "dataFiles": [
+    {
+      "id": "baseline-json",
+      "label": "PSA Baseline JSON",
+      "path": "/data/psa_2026_baseline.json",
+      "type": "json",
+      "citations": [1, 2, 3, 4, 13]
+    },
+    {
+      "id": "imf-csv",
+      "label": "IMF WEO Forecasts CSV",
+      "path": "/data/imf_weo_forecasts.csv",
+      "type": "csv",
+      "citations": [10]
+    },
+    {
+      "id": "world-bank-csv",
+      "label": "World Bank Historical CSV",
+      "path": "/data/world_bank_historical.csv",
+      "type": "csv",
+      "citations": [11]
+    },
+    {
+      "id": "fx-json",
+      "label": "USD/PHP Exchange Rate JSON",
+      "path": "/data/latest_exchange_rate.json",
+      "type": "json",
+      "citations": [12]
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "gdp-identity",
+      "text": "GDP is aggregated as C + I + G(goods/services) + NX each simulated year.",
+      "citations": [13]
+    },
+    {
+      "id": "household-consumption",
+      "text": "Household consumption is max(survival_cost, disposable_income * MPC); VAT is computed from gross consumption.",
+      "citations": [4, 5, 13]
+    },
+    {
+      "id": "firm-rules",
+      "text": "Firms invest 20% of revenue scaled by (1 + 5% growth expectation); corporate tax is 15% of revenue times CIT rate.",
+      "citations": [8, 13]
+    },
+    {
+      "id": "macro-feedback",
+      "text": "Unemployment and inflation adjust using simple threshold rules based on GDP growth; poverty rises when low-income disposable income falls below survival cost.",
+      "citations": [1, 2, 3, 4, 10, 11, 13]
+    },
+    {
+      "id": "tax-baseline",
+      "text": "Policy sliders start from statutory baselines: VAT 12%, CIT 25%, PIT schedule from TRAIN.",
+      "citations": [7, 8, 9]
+    },
+    {
+      "id": "distribution-proxy",
+      "text": "Income-share and high-income household concentration are calibrated as a proxy layer informed by poverty incidence and inequality indicators.",
+      "citations": [4, 6]
+    }
+  ]
+}

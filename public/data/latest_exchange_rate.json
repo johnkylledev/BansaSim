@@ -1,0 +1,9 @@
+{
+    "Metadata": {
+        "Source": "Open Exchange Rates API (Proxy for BSP)",
+        "Date_Fetched": "2026-04-08",
+        "Base_Currency": "USD",
+        "Target_Currency": "PHP"
+    },
+    "Exchange_Rate": 60.228688
+}
