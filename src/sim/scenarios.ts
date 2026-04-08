@@ -58,14 +58,14 @@ export function runAllScenarios(config: BaselineConfig, controls: PolicyControls
 }
 
 export const SCENARIO_LABEL: Record<ScenarioName, string> = {
-  Baseline: 'Baseline (Current 12% VAT, No changes)',
-  Austerity: 'Austerity (Raise VAT to 15%, No Help)',
+  Baseline: 'Baseline (12% VAT, No changes)',
+  Austerity: 'Austerity (15% VAT, No Help)',
   Custom: 'Your Custom Policy',
 };
 
 export const SCENARIO_COLOR: Record<ScenarioName, string> = {
-  Baseline: '#1f77b4',
-  Austerity: '#d62728',
-  Custom: '#2ca02c',
+  Baseline: '#3b82f6', // blue-500
+  Austerity: '#ef4444', // red-500
+  Custom: '#9333ea', // purple-600
 };
 

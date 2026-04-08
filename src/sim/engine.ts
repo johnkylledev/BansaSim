@@ -81,6 +81,7 @@ class MacroEconomy {
   public inflationRate: number;
   public unemploymentRate: number;
   public povertyRate: number;
+  public nationalDebtTrill: number;
 
   private readonly low: Household;
   private readonly mid: Household;
@@ -96,6 +97,7 @@ class MacroEconomy {
     this.inflationRate = base.Inflation_Rate;
     this.unemploymentRate = base.Unemployment_Rate;
     this.povertyRate = base.Poverty_Rate;
+    this.nationalDebtTrill = this.gdpTrill * 0.60; // Approximate 60% Debt-to-GDP starting point
 
     const households = config.ABM_Households;
     this.low = new Household(
@@ -161,6 +163,8 @@ class MacroEconomy {
     if (this.low.disposableIncomeTrill < this.low.minSurvivalCostTrill) this.povertyRate += 0.02;
 
     this.gdpTrill = newGdpTrill;
+    this.nationalDebtTrill += deficitTrill; // Add deficit to national debt
+    const debtToGdpPct = (this.nationalDebtTrill / this.gdpTrill) * 100;
 
     return {
       economySizeTrill: round2(this.gdpTrill),
@@ -170,6 +174,8 @@ class MacroEconomy {
       govRevenueTrill: round2(taxRevenueTrill),
       govSpendingTrill: round2(totalSpendingTrill),
       govDeficitTrill: round2(deficitTrill),
+      nationalDebtTrill: round2(this.nationalDebtTrill),
+      debtToGdpPct: round2(debtToGdpPct),
       poorSpendingPowerTrill: round2(this.low.disposableIncomeTrill),
     };
   }

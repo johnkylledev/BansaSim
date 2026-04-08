@@ -49,6 +49,8 @@ export type SimResultRow = {
   govRevenueTrill: number;
   govSpendingTrill: number;
   govDeficitTrill: number;
+  nationalDebtTrill: number;
+  debtToGdpPct: number;
   poorSpendingPowerTrill: number;
 };
 
