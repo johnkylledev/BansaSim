@@ -116,10 +116,10 @@ export default function Dashboard() {
                 <TableHeader className="bg-slate-50 border-b border-slate-200">
                   <TableRow className="hover:bg-transparent">
                     <TableHead className="font-semibold text-slate-500 border-r w-[250px]"></TableHead>
-                    <TableHead className="text-right font-medium text-slate-500 border-r w-[120px]">{SCENARIO_LABEL.Baseline}</TableHead>
-                    <TableHead className="text-right font-medium text-slate-500 border-r w-[120px]">{SCENARIO_LABEL.Austerity}</TableHead>
-                    <TableHead className="text-right font-medium text-amber-600 bg-amber-50/50 border-r w-[120px] h-[45px]">
-                      <div className="flex items-center justify-end gap-1 w-full h-full">
+                    <TableHead className="text-right font-medium text-slate-500 border-r w-[150px] whitespace-normal break-words leading-tight p-2">{SCENARIO_LABEL.Baseline}</TableHead>
+                    <TableHead className="text-right font-medium text-slate-500 border-r w-[150px] whitespace-normal break-words leading-tight p-2">{SCENARIO_LABEL.Austerity}</TableHead>
+                    <TableHead className="text-right font-medium text-amber-600 bg-amber-50/50 border-r w-[150px] h-[45px] whitespace-normal break-words p-2">
+                      <div className="flex items-center justify-end gap-1 w-full h-full leading-tight">
                         {SCENARIO_LABEL.Custom}
                       </div>
                     </TableHead>
